@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Laptop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="galeri">Galeri Laptop</h1>
+  <input type="text" id="searchInput" placeholder="Cari Laptop...">
+  <div id="laptopList"></div>
+  <button class="tengah" onclick="showDeleted()">Tampilkan yang Dihapus</button>
+  <div id="deletedLaptops" class="hidden"></div>
+
+  <div class="form-container">
+    <h2>Tambah Produk Baru</h2>
+    <input type="text" id="productName" placeholder="Nama Produk">
+    <input type="text" id="productPrice" placeholder="Harga (contoh: Rp 6.000.000)">
+    <textarea id="productDesc" placeholder="Deskripsi"></textarea>
+    <input type="file" id="productImage" accept="image/*">
+    <img id="preview" class="preview-img">
+    <button onclick="addProduct()">Tambah Produk</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
